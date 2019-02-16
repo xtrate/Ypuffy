@@ -1,0 +1,36 @@
+# extended LDIF
+#
+# LDAPv3
+# base <ou=group,dc=hackthebox,dc=htb> with scope subtree
+# filter: objectclass=*
+# requesting: ALL
+#
+
+# group, hackthebox.htb
+dn: ou=group,dc=hackthebox,dc=htb
+ou: group
+objectClass: top
+objectClass: organizationalUnit
+
+# bob8791, group, hackthebox.htb
+dn: cn=bob8791,ou=group,dc=hackthebox,dc=htb
+objectClass: posixGroup
+objectClass: top
+cn: bob8791
+userPassword:: e2NyeXB0fSo=
+gidNumber: 5001
+
+# alice1978, group, hackthebox.htb
+dn: cn=alice1978,ou=group,dc=hackthebox,dc=htb
+objectClass: posixGroup
+objectClass: top
+cn: alice1978
+userPassword:: e2NyeXB0fSo=
+gidNumber: 5000
+
+# search result
+search: 2
+result: 0 Success
+
+# numResponses: 4
+# numEntries: 3
